@@ -1,3 +1,1 @@
 # vncAutoSetupBash
-# vncAutoSetupBash
-# vncAutoSetupBash
