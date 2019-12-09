@@ -2,8 +2,9 @@
 read -p 'Server username:' USERNAME
 # install requirements
 sudo apt update && sudo apt install xfce4 xfce4-goodies && sudo apt install tightvncserver
+vncserver && vncserver -kill :1
 # backup & modify xstartup
-mv ~/.vnc/xstartup ~/.vnc/xstartup.bak
+sudo mv ~/.vnc/xstartup ~/.vnc/xstartup.bak
 # define DE for Xresources
 sudo echo -e "#!/bin/bash \nxrdb $HOME/.Xresources \nstartxfce4 &" >> ~/.vnc/xstartup
 sudo chmod +x ~/.vnc/xstartup # change to chmod 755
